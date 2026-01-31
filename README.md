@@ -150,7 +150,6 @@ admissibility-beyond-minimal-surfaces/
 ├── docs/
 │   ├── CLAIMS_AND_LIMITS.md
 │   ├── RELATED_WORK_MAP.md
-│   ├── SESSION_BOOTSTRAP.md
 │   └── TERMINOLOGY.md
 └── paper/
     ├── admissibility_beyond_surface_minimization.tex
