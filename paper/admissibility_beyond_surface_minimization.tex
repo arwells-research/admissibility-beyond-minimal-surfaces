@@ -1,0 +1,57 @@
+% admissibility_beyond_surface_minimization.tex
+
+\documentclass[11pt]{article}
+
+% --- Basic packages ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % safe even if we avoid UTF-8 content
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Math / formatting ---
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% --- References / links ---
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+
+\title{Admissibility Beyond Classical Surface Minimization in Physical Networks}
+\author{A. R. Wells\\
+\small Dual-Frame Research Group}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Surface-minimization models have recently emerged as a powerful framework for describing the geometry of physical networks, successfully explaining a range of local branching motifs that eluded earlier one-dimensional wiring-length theories.\cite{Meng2026SurfaceOptimization} By representing networks as smooth embedded surfaces subject to thickness or capacity constraints, these models capture essential geometric features using classical minimal-surface principles closely related to the Nambu--Goto action.
+
+Despite these successes, the formal decision power of surface minimization has not been isolated explicitly. We show that, when interpreted as a classical saddle-point evaluation of a constrained geometric action, surface minimization is generically incomplete as a variational theory of network organization. This incompleteness is structural rather than technical: surface minimization determines geometry within a fixed topology class, but cannot decide topology selection, the permissibility of topology-changing transitions, or the resolution of competing constraints across scales.
+
+We identify three sources of this limitation---single-saddle determinacy, kinematic treatment of capacity constraints, and restriction to prescribed topology classes---and show that they imply underdetermination even when minimal-area solutions are well defined. To resolve this gap, we argue that any complete description requires an explicit notion of admissibility: a principle governing which configurations and transitions are physically permitted.
+
+Admissibility is logically distinct from optimization and irreducible to refinements of surface-area functionals. Introducing admissibility yields concrete, testable consequences, including thresholded topology changes, history dependence, and the persistence of locally non-optimal configurations. The paper makes explicit the boundary between classical geometric optimization and admissibility-governed phenomena, positioning surface minimization as a necessary but partial component of a complete theory. Formally, surface minimization determines geometry conditional on admissibility, whereas admissibility itself is not derivable from the variational principle and must be specified independently.
+\end{abstract}
+
+
+% --- Main sections (pulled from separate files) ---
+\input{intro.tex}
+\input{incompleteness.tex}
+\input{admissibility.tex}
+\input{conclusion.tex}
+
+% --- Bibliography ---
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}

@@ -1,0 +1,151 @@
+\section{Structural Incompleteness of Classical Surface-Minimization Models}
+\label{sec:incompleteness}
+
+Surface-minimization models of physical networks are formulated as variational problems over smooth manifolds embedded in three-dimensional space, typically minimizing an area functional subject to a non-collapse or thickness constraint. Solutions of such models correspond to classical extrema of the action within a prescribed topology class.\cite{Meng2026SurfaceOptimization} This saddle-point interpretation mirrors the classical treatment of the Nambu--Goto action prior to summation over topological sectors.\cite{Polchinski1998} This formulation provides a clear basis for assessing which aspects of network organization these models determine in principle and which lie beyond their scope.
+
+In this section we argue that surface minimization, understood in this classical sense, is generically incomplete. The limitations identified here do not arise from missing parameters, numerical approximation, or insufficient empirical resolution. Rather, they follow directly from the reliance on a single classical saddle evaluated under fixed constraints and within a restricted class of admissible topologies.
+
+\subsection{Single-saddle character of surface minimization}
+
+By construction, surface-minimization models select a single extremal configuration for a given set of boundary conditions and constraint parameters. All predicted geometric features---junction degree, branching angles, and local motif stability---are properties of this extremum. The formulation does not represent an ensemble of configurations, nor does it encode competition between multiple realizations that satisfy the same local constraints.
+
+In string-theoretic terms, this corresponds to evaluating a constrained Nambu--Goto--type action at a fixed classical worldsheet saddle, without summation over distinct saddles or integration over topological sectors. While this approximation is sufficient to characterize local geometry, it imposes inherent limitations once questions extend beyond the determination of a single locally optimal shape.
+
+\subsection{Limits of topology selection by action minimization}
+
+A natural objection is that topology selection could be achieved by comparing the minimal action values associated with different topological classes and selecting the configuration with the lowest action. While such comparisons are mathematically well defined in static variational terms, they are insufficient to determine physical realization.
+
+Topology change is not a smooth deformation within a fixed configuration space but a singular event separating distinct continuation classes. Surface minimization, formulated as a static extremization problem, does not encode whether one topology is reachable from another under smooth continuation of the network, nor whether a transition between them is dynamically accessible or materially admissible in practice. Consequently, even if one topology admits a lower-area extremum than another, this comparison alone does not determine which configuration can arise from a given initial state. More generally, even ensemble or Monte Carlo procedures that sample multiple topology classes still require a prior specification of which classes are included and how they are weighted; that specification constitutes an admissibility decision that is logically external to the variational principle itself.
+
+The limitation is therefore not the absence of an ordering principle over action values, but the absence of a criterion for admissible continuation. Surface minimization determines the geometry of a configuration conditional on its existence; it does not determine when a change in topology should occur, or whether such a change is permitted at all.
+
+\subsection{Capacity constraints and global consistency}
+
+Surface-minimization models impose thickness or capacity constraints kinematically, treating them as externally specified bounds that restrict admissible geometries. This treatment is essential for reproducing observed local motifs and preventing nonphysical collapse. However, it introduces a further limitation at the level of global organization.
+
+While the theory can identify an optimal geometry given a specified capacity bound, it does not determine how that bound should be modified or enforced when constraints compete. In particular, it provides no criterion for deciding whether conflicts between local capacity requirements should be resolved by redistributing capacity, relaxing constraints, or inducing a topological reorganization. These alternatives correspond to distinct physical outcomes, yet they are indistinguishable within a framework in which capacity is fixed by assumption.
+
+Such decisions are not merely hypothetical. In biological networks, responses to congestion or growth pressure can involve either reinforcement of existing channels or the creation of new pathways, depending on context. Surface minimization alone does not determine which mode of response is selected. The theory presupposes the role of capacity constraints; it does not adjudicate their interaction with topology.
+
+\subsection{Restriction to prescribed topology classes}
+
+In practice, surface-minimization models are evaluated within topology classes appropriate to locally tree-like structures, reflecting the empirical emphasis on branching motifs. Within this restricted domain, the theory performs well. However, the restriction itself is not derived from the variational principle but imposed as a modeling assumption.
+
+This restriction is potentially consequential because many physical networks---including vascular systems with anastomoses and neural circuits with bridging connections---exhibit cycles and long-range interactions in at least some regimes. Surface minimization, as typically formulated, provides no principled basis for excluding such topologies a priori, nor for determining when their inclusion becomes necessary. The limitation is therefore not merely one of scope, but of theoretical justification.
+
+\subsection{Structural nature of the incompleteness}
+
+The limitations identified above follow directly from three features of the formulation: selection of a single classical extremum, kinematic imposition of constraints, and restriction to fixed topology classes. Together, these features imply that surface minimization can determine the geometry of an admissible continuation but cannot determine admissibility itself, understood here as the permissibility of transitions between distinct configurations under competing constraints.
+
+Accordingly, questions of topology selection, inadmissible transitions, and cross-scale consistency are formally undecidable within classical surface-minimization frameworks. This claim does not extend to classical physics more broadly: such questions may be addressed by dynamical stability analysis, developmental constraints, or metabolic cost considerations---none of which are encoded in surface-area functionals. The point here is narrower and more precise: surface minimization alone does not supply the principles required to resolve these decisions.
+
+\subsection{A regime contrast: determinacy versus underdetermination}
+
+The limitations identified above can be sharpened by contrasting two distinct regimes in which surface-minimization models are applied. This comparison isolates a structural boundary of the framework itself, separating situations where the classical variational formulation is fully determinative from those where it is intrinsically underdetermined. The contrast does not oppose surface minimization to an alternative theory, but distinguishes the conditions under which its mathematical structure is sufficient from those under which it is not.
+
+Surface minimization is highly effective when network morphology evolves as a smooth continuation within a fixed topology class. In such cases--typified by locally tree-like branching structures--network geometry is determined by minimizing an area functional subject to thickness or capacity constraints. Empirically observed features such as junction order, branching angles, and orthogonal sprouts are well captured by a single classical extremum of the action. Crucially, there is no ambiguity regarding admissibility in this regime: all candidate configurations lie within the same continuation class, and the theory is tasked solely with optimizing their geometry.
+
+From a variational perspective, this corresponds to evaluating the action on a single connected configuration with fixed topology. The saddle-point problem is mathematically well posed, and surface minimization operates precisely as intended, determining geometry conditional on admissibility. In this regime, no additional principle is required to select among competing realizations.
+
+A formally distinct regime arises when multiple continuation classes become available. Here, network evolution admits qualitatively different topological outcomes--such as the introduction of loops or long-range bridging connections--each of which supports a smooth minimal-area realization under the same local constraints. While each topology can be optimized independently, the classical variational formulation does not determine which topology is physically realized.
+
+The source of this underdetermination is structural. Topology change is not a smooth deformation within a fixed configuration space, but a singular event separating distinct continuation classes. A classical saddle-point evaluation can rank geometries within a given topology class, but it cannot decide between topology classes. Even when a looped configuration admits a lower-area extremum than a tree-like one, surface minimization alone provides no criterion for whether the transition is dynamically or materially permissible.
+
+This limitation is widely recognized in practice: surface-minimization models are routinely supplemented with additional criteria---such as threshold shear stresses\cite{Bentley2014}, developmental cues, or material constraints---to trigger or forbid topology-changing events.\cite{Ronellenfitsch2015}
+
+A schematic illustration (Fig.~\ref{fig:topology_admissibility}) makes this distinction concrete. Consider a locally branching configuration admitting two continuations: one remains tree-like, while the other introduces a short loop between adjacent branches. Both configurations support smooth surfaces satisfying identical local thickness constraints and both possess well-defined minimal-area realizations. Surface minimization can optimize each independently, but it does not determine whether the looped topology can arise from the tree-like configuration. The loop may be physically inaccessible despite being locally optimal, because the transition requires a discontinuous reorganization or the violation of intermediate constraints. Vascular anastomoses and neuronal bridge formations provide biological instances in which such topology-switching events are selectively realized rather than generically favored.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  x=1cm,y=1cm,
+  node/.style={circle,draw,inner sep=1.2pt,minimum size=6pt},
+  edge/.style={line width=0.7pt},
+  lab/.style={font=\small, align=center}, % Added align=center to allow manual breaks
+  title/.style={font=\small\bfseries},
+  gate/.style={draw,rounded corners=2pt,inner sep=2.5pt,font=\small},
+  arr/.style={-{Latex[length=2.4mm]},line width=0.8pt}
+]
+
+% -------------------------
+% Panel A: tree-like class
+% -------------------------
+\node[title] (A_title) at (-4.5,2.3) {Topology class $\tau$ (tree)};
+\node[node] (a0) at (-5.4,0.8) {};
+\node[node] (a1) at (-4.5,1.5) {};
+\node[node] (a2) at (-4.5,0.1) {};
+\node[node] (a3) at (-3.5,2.0) {};
+\node[node] (a4) at (-3.3,1.1) {};
+\node[node] (a5) at (-3.5,0.5) {};
+\node[node] (a6) at (-3.4,-0.4) {};
+
+\draw[edge] (a0) -- (a1);
+\draw[edge] (a0) -- (a2);
+\draw[edge] (a1) -- (a3);
+\draw[edge] (a1) -- (a4);
+\draw[edge] (a2) -- (a5);
+\draw[edge] (a2) -- (a6);
+
+% Added a line break to prevent horizontal clashing
+\node[lab] at (-4.5,-1.1) {Surface minimization:\\optimize geometry within $\tau$};
+
+% -------------------------
+% Panel B: looped class
+% -------------------------
+\node[title] (B_title) at (4.5,2.3) {Topology class $\tau'$ (loop)};
+\node[node] (b0) at (3.6,0.8) {};
+\node[node] (b1) at (4.5,1.5) {};
+\node[node] (b2) at (4.5,0.1) {};
+\node[node] (b3) at (5.5,2.0) {};
+\node[node] (b4) at (5.7,1.1) {};
+\node[node] (b5) at (5.5,0.5) {};
+\node[node] (b6) at (5.6,-0.4) {};
+
+\draw[edge] (b0) -- (b1);
+\draw[edge] (b0) -- (b2);
+\draw[edge] (b1) -- (b3);
+\draw[edge] (b1) -- (b4);
+\draw[edge] (b2) -- (b5);
+\draw[edge] (b2) -- (b6);
+\draw[edge] (b4) -- (b5);
+
+% Added a line break here as well
+\node[lab] at (4.5,-1.1) {Surface minimization:\\optimize geometry within $\tau'$};
+
+% -------------------------
+% Middle: admissibility gate
+% -------------------------
+\node[gate] (G) at (0,0.9) {$A(\tau\!\to\!\tau')\in\{0,1\}$};
+\draw[arr] (a4.east) -- ++(0.5,0) |- (G.west);
+\draw[arr] (G.east) -- ++(0.5,0) |- (b4.west);
+
+\node[lab] at (0,0.1)
+{Topology change is not decided\\by static minimization};
+
+\node[lab] at (0,-0.8)
+{If $A=0$: transition forbidden\\If $A=1$: reorganization permitted};
+
+\end{tikzpicture}
+\caption{
+Schematic illustration of topology selection versus geometric optimization.
+Surface minimization determines the optimal geometry within a fixed continuation class (left: tree-like $\tau$, right: looped $\tau'$).
+The permissibility of the topology-changing transition $\tau\!\to\!\tau'$ is governed by an admissibility gate $A(\tau\!\to\!\tau')$, which is not determined by the variational principle itself.
+}
+\label{fig:topology_admissibility}
+\end{figure}
+Figure~\ref{fig:topology_admissibility} emphasizes that surface minimization ranks geometries within each topology class, while admissibility governs whether transitions between classes occur at all.
+
+The contrast illustrates that the need for an admissibility criterion is not an external imposition on surface-minimization theory, but an implicit requirement already recognized in its application. Surface minimization determines the geometry of configurations conditional on their existence; it does not determine when new configurations become admissible. Making this boundary explicit clarifies the precise limits of the framework's domain of determinacy without diminishing its explanatory power.
+
+\subsection{Implications}
+
+Surface-minimization models occupy a well-defined and powerful position in the theory of physical networks. They provide a necessary description of locally admissible geometry and successfully explain a wide range of observed branching motifs. At the same time, their reliance on a single classical saddle evaluated under fixed constraints renders them generically and structurally incomplete.
+
+The following section identifies the minimal requirements for an additional admissibility principle capable of resolving these undecidable questions while remaining consistent with the empirical successes of surface-minimization approaches.
+
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{
+\textbf{Main Result.}
+Classical surface minimization determines network geometry within a fixed topology class, but it does not determine which topology classes or transitions are physically permitted; therefore any complete theory of physical network organization requires an independent admissibility principle in addition to geometric optimization.
+}}
+\end{center}

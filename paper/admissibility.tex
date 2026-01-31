@@ -1,0 +1,52 @@
+\section{Admissibility as a Necessary Extension}
+\label{sec:admissibility}
+
+Section~\ref{sec:incompleteness} established that classical surface-minimization models determine the geometry of locally admissible configurations, but do not determine admissibility itself. In particular, questions concerning topology selection, transition permissibility, and the resolution of conflicting constraints remain undecidable within a framework based solely on classical extrema of a surface-area functional.\cite{Meng2026SurfaceOptimization} This section shows that introducing admissibility as an explicit conceptual layer does more than rename this gap: it resolves concrete indeterminacies left open by surface minimization and leads to distinct, testable consequences.
+
+The purpose here is not to propose a specific admissibility mechanism. Rather, the aim is to demonstrate that admissibility plays a logically irreducible role in completing surface-minimization theories, and to clarify why this role cannot be subsumed by existing optimization-based extensions.
+
+\subsection{Admissibility distinct from optimization}
+
+Surface minimization is an optimization procedure defined over a configuration space assumed to be admissible. It selects an extremal geometry conditional on the existence of that space. Admissibility addresses a different class of questions: whether a configuration is permitted at all, whether a transition between configurations may occur, and whether qualitative reorganization is required under competing constraints.
+
+Formally, admissibility can be represented as a binary relation over continuation classes. Let $\mathcal{T}$ denote the set of candidate topology/continuation classes, and let $A:\mathcal{T}\times\mathcal{T}\to\{0,1\}$ be an admissibility map with $A(\tau\!\to\!\tau')=1$ if the transition $\tau\to\tau'$ is permitted under the relevant constraints and $A(\tau\!\to\!\tau')=0$ otherwise. Surface minimization then determines the extremal geometry \emph{conditional} on $\tau$ and on the admissible transitions encoded by $A$, but does not itself determine $A$. This formulation makes explicit that admissibility is not a graded preference encoded by a cost functional, but a categorical permission structure that partitions configuration space into accessible and forbidden transitions.
+
+This distinction is not merely terminological. Optimization compares alternatives within a fixed domain, whereas admissibility determines the domain itself and governs transitions between distinct domains. Encoding admissibility as a refinement of the surface functional---through additional penalty terms, topology-switching costs, or ensemble weights---does not eliminate this distinction. Such constructions remain optimization-based and therefore presuppose that the relevant configurations and transitions are already admissible. The logical question of whether a transition is permitted in the first place is not answered by assigning it a finite cost.
+
+\subsection{Resolution of indeterminacies left by surface minimization}
+
+The incompletenesses identified in Section~\ref{sec:incompleteness} arise where surface minimization yields determinate geometries but indeterminate physical outcomes. When multiple topologically distinct continuations satisfy the same local constraints, or when capacity constraints conflict across scales, surface minimization remains mathematically well posed yet underdetermined with respect to physical realization.
+
+Admissibility resolves these indeterminacies by introducing categorical distinctions: continuation may be permitted, qualitative reorganization may be required, or a transition may be forbidden. These distinctions are categorical in the sense that they separate mutually exclusive classes of physical behavior---permitted versus forbidden---rather than more-favorable versus less-favorable configurations within a continuous optimization landscape. The outcome is not a small change in geometry, but a change in which configurations or transitions are accessible at all.
+
+\subsection{Admissible transitions and topology change}
+
+A central function of admissibility concerns transitions between distinct configuration classes, particularly those involving topology change. Such transitions are not encoded in static variational formulations, which evaluate extrema within fixed topology classes. Even non-equilibrium or dissipative extensions of variational principles evaluate trajectories within a prescribed configuration space and therefore presuppose the admissibility of the transitions they describe.
+
+While path-integral or ensemble formulations can, in principle, sum over multiple topological sectors, they still require specification of which sectors are included and with what prior weights or measures. That specification is an admissibility decision not determined by the action alone. In particular, choosing which sectors to include and how to weight them already presupposes a prior notion of what transitions are allowed. Surface minimization therefore governs geometry conditional on admissibility, but cannot supply admissibility itself.
+
+\subsection{Illustrative case: history-dependent vascular anastomosis}
+
+The distinct role of admissibility can be illustrated by a minimal schematic example drawn from vascular organization. Consider an initially tree-like vascular network supplying a tissue region. As tissue demand increases or damage occurs, the formation of a loop (anastomosis) between neighboring branches may reduce total surface area and improve flow redundancy.
+
+A surface-minimization analysis performed over both tree-like and looped topologies would predict the looped configuration whenever its minimal area is lower. However, empirical observations indicate that anastomoses form only under specific conditions, such as sustained shear stress, flow-induced vessel wall remodeling, or activation of developmental signaling cascades, and do not appear simply because a looped configuration would be geometrically favorable.\cite{Bentley2014}
+
+This behavior cannot be captured by surface minimization alone. An admissibility constraint---such as a threshold condition on stress accumulation or signaling activation---governs whether the topology switch is permitted. Below threshold, the looped configuration remains physically inaccessible despite being locally optimal; above threshold, topology reorganization becomes admissible, and surface minimization determines which specific anastomotic geometry is realized. The result is path dependence and hysteresis: networks with identical current constraints may exhibit different topologies depending on formation history.
+
+\subsection{Empirical consequences of admissibility}
+
+Introducing admissibility leads to empirical consequences that differ qualitatively from those predicted by optimization alone. These include thresholded topology changes rather than continuous deformation, history-dependent organization under identical boundary conditions, and the persistence of locally non-optimal configurations due to forbidden transitions. In addition, admissibility-driven transitions can produce abrupt reorganization in response to continuous parameter variation, resembling bifurcation-like behavior that is not attributable to instabilities of a potential surface but to crossing admissibility thresholds.
+
+Such features are observed in biological and physical networks and cannot be explained by surface minimization without additional assumptions. Admissibility therefore does not merely label a theoretical gap; it alters the space of expected behaviors in a way that is empirically discriminable.
+
+\subsection{Relation to existing physical principles}
+
+Different systems may realize admissibility through diverse mechanisms, including dynamical stability constraints, developmental regulation, energetic limitations, or evolutionary pressures. These mechanisms are often studied independently and applied in system-specific ways. Abstracting their shared logical role as admissibility clarifies what these mechanisms accomplish when they constrain transitions rather than geometries.
+
+The admissibility concept articulated here is intentionally abstract. It isolates a common decision function that existing principles implement in heterogeneous ways, without asserting that any single mechanism is universal. Surface minimization alone does not supply this function, regardless of how accurately it captures local geometry.
+
+\subsection{Complementarity with surface minimization}
+
+Surface minimization and admissibility occupy complementary but logically non-symmetric roles. Admissibility determines which configurations and transitions are permitted under the relevant constraints. Surface minimization determines the geometry of configurations conditional on admissibility. When conflicts arise, admissibility takes logical precedence by restricting the configuration space over which optimization is performed. Physically, this means that transitions which would reduce surface area may nonetheless be forbidden by developmental, material, or energetic constraints.
+
+Together, the two principles form a layered description of physical network organization. Surface minimization governs shape selection within admissible regimes, while admissibility governs the accessibility of regimes themselves. Neither principle subsumes the other, and both are required for a complete account.

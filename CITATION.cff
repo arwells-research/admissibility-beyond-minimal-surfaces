@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite the corresponding Zenodo record for the version used."
+authors:
+  - family-names: Wells
+    given-names: A. R.
+    orcid: "https://orcid.org/0009-0003-1053-9421"
+title: "Admissibility Beyond Classical Surface Minimization in Physical Networks"
+version: "1.0.0"
+date-released: 2026-01-31
+repository-code: "https://github.com/arwells-research/admissibility-beyond-minimal-surfaces"
+license: CC-BY-4.0
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Wells
+      given-names: A. R.
+      orcid: "https://orcid.org/0009-0003-1053-9421"
+  title: "Admissibility Beyond Classical Surface Minimization in Physical Networks"
+  year: 2026
+  publisher: Zenodo
+  doi: 10.5281/zenodo.18444241
